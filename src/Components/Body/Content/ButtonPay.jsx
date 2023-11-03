@@ -31,6 +31,7 @@ const ButtonPay = () => {
                </div>
                <div className="line1"></div>
             </div>
+            <div className="line2"></div>
             <div className="iconsDiv">
                <img src={VisaCard} className="iconPay"/>
                <img src={DPay} className="iconPay"/>

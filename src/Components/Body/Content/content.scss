@@ -318,15 +318,14 @@
                .line{
                   width: 1px;
                   height: 12px;
-                  background-color: #4D5254;
+                  background-color: #CFCFCF;
                   display: block;
                }
                .line1{
+                  display: block;
                   width: 1px;
                   height: 12px;
-                  background-color: #4D5254;
-                  display: block;
-                  
+                  background-color: #CFCFCF;
                }
                .lockPayTextDiv{
                   display: flex;
@@ -337,6 +336,9 @@
                      margin-right: 10px;
                   }
                }
+               }
+               .line2{
+                  display: none;
                }
 
                .iconsDiv{
@@ -394,7 +396,7 @@
    }
 }
 
-@media screen and (max-width: 1300px){
+@media screen and (max-width: 1400px){
       .right{
          .rightContent{
             .buttonPayDiv{
@@ -402,9 +404,20 @@
                   flex-direction: column;
                   align-items: center;
                   .payText1{
-                     border-bottom: 1px solid #CFCFCF;
                      .line1{
-                     display: none;
+                        display: none !important;
+                        width: 0;
+                        height: 0;
+                        background-color: white;
+                     }
+                  }
+                  .line2{
+                     display: block !important;
+                     width: 83% !important;
+                     height: 1px;
+                     background-color: #CFCFCF;
+                     margin: 3px auto;
+                     width: 100%;
                   }
                   .iconsDiv{
                      width: 80%;
@@ -412,14 +425,12 @@
                      align-items: center;
                      justify-content: space-around;
                      margin: 0 auto;
-                     padding-top:  15px !important;
-                     padding-bottom: 0;
+                     padding: 8px 0;
                      .iconPay{
                         width: 30px;
                         height: 20px;
                         }
                      }
-                  }
                }
             }
          }
@@ -455,10 +466,6 @@
                   flex-direction: column;
                   align-items: center;
                   .payText1{
-                     border-bottom: 1px solid #CFCFCF;
-                     .line1{
-                     display: none;
-                  }
                   .iconsDiv{
                      width: 80%;
                      display: flex;
