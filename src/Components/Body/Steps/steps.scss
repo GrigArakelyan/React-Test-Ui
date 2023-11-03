@@ -1,0 +1,126 @@
+.steps{
+   width: 100%;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   margin: 35px 0;
+   .step{
+      display: flex;
+      align-items: center;
+      .stepIconDiv{
+         background-color: #FFFFFF;
+         width: 40px;
+         height: 40px;
+         border-radius: 50%;   
+      }
+      .stepBlue{
+         background-color: #2C7EF8;
+         width: 40px;
+         height: 40px;
+         border-radius: 50%;  
+      }
+      .stepGreen{
+         background-color: #85BF55;
+         width: 40px;
+         height: 40px;
+         border-radius: 50%;  
+      }
+      .stepTextTitle{
+         color: #000000;
+         font-size: 20px;
+         line-height: 22px;
+         font-weight: 400;
+         margin: 0 10px;
+      }
+      .stepText{
+         color: #000000;
+         font-size: 20px;
+         line-height: 22px;
+         font-weight: 400;
+         margin: 0 10px;
+      }
+   }:last-child{
+      justify-content: end;
+   }
+}
+
+.stepSvg{
+   width: 16px;
+   height: 16px;
+   margin: 12px;
+   border-radius: 50%;
+}
+
+.stepNumberWite{
+   color: #FFFFFF;
+   font-size: 20px;
+   line-height: 22px;
+   font-weight: 400;
+   margin:8px 12px;
+   border: 2px solid #2C7EF8;
+   border-radius: 50%;
+}
+.stepNumberBlue{
+   color: #2C7EF8;
+   font-size: 20px;
+   line-height: 22px;
+   font-weight: 400;
+   padding:8px 12px;
+   border: 2px solid #2C7EF8;
+   border-radius: 50%;
+}
+
+
+
+@media screen and (max-width: 1024px){
+   .steps{
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      .step{
+         width: calc(100% - 40px);
+         margin: 20px;
+         flex-direction: column;
+         align-items: center;
+         .stepTextTitle{
+            display: none;
+         }
+         .stepText{
+            margin-top: 15px;
+            text-align: center;
+         }
+      }:last-child{
+         justify-content: start;
+      }
+   }
+}
+
+@media screen and (max-width: 650px){
+   .steps{
+      .step{
+         width: 100%;
+         margin: 20px 0;
+         .stepTextTitle{
+            display: none;
+            .stepIconDiv{
+               width: 20px;
+               height: 20px;
+            }
+            .stepBlue{
+               width: 20px;
+               height: 20px;
+            }
+            .stepGreen{
+               width: 20px;
+               height: 20px;
+            }
+         }
+         .stepText{
+            width: 100%;
+            font-size: 12px;
+            margin-top: 15px;
+            text-align: center;
+         }
+      }
+   }
+}
+

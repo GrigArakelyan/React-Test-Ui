@@ -1,0 +1,53 @@
+.logosDiv{
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-top: 30px ;
+   .logo1{
+      width: 192px;
+      height: 36px;
+   }
+   .logoRightDiv{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-right: 10px;
+      .logo2{
+         margin-left: 35px;
+         width: 88px;
+         height: 32px;
+      }
+   }
+}
+
+@media screen and (max-width: 800px){
+   .logosDiv{
+   .logoRightDiv{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-right: 35px;
+   }
+}
+}
+
+@media screen and (max-width: 530px){
+   .logosDiv{
+   .logo1{
+      width: 110px;
+      height: 20px;
+   }
+   .logoRightDiv{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-right: 35px;
+      .logo2{
+         margin-left: 20px;
+         width: 50px;
+         height: 20px;
+      }
+   }
+}
+}
