@@ -26,20 +26,20 @@ const ButtonPay = () => {
                <p className="payText">Free shipping</p>
                <div className="line"></div>
                <div className="lockPayTextDiv">
-                  <Lock className="lockIcon"/>
+                  <Lock className="lockIcon" alt=""/>
                   <p className="payText">Secure 256-bit SSL encryption.</p>
                </div>
                <div className="line1"></div>
             </div>
             <div className="line2"></div>
             <div className="iconsDiv">
-               <img src={VisaCard} className="iconPay"/>
-               <img src={DPay} className="iconPay"/>
-               <img src={PayPal} className="iconPay"/>
-               <img src={MasterCard} className="iconPay"/>
-               <img src={GPay} className="iconPay"/>
-               <img src={ApplePay} className="iconPay"/>
-               <img src={Amex} className="iconPay"/>
+               <img src={VisaCard} className="iconPay" alt=""/>
+               <img src={DPay} className="iconPay" alt=""/>
+               <img src={PayPal} className="iconPay" alt=""/>
+               <img src={MasterCard} className="iconPay" alt=""/>
+               <img src={GPay} className="iconPay" alt=""/>
+               <img src={ApplePay} className="iconPay" alt=""/>
+               <img src={Amex} className="iconPay" alt=""/>
             </div>
          </div>
          <div className="redTextDiv">

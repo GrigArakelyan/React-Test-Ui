@@ -8,7 +8,7 @@ const LeftFooter = () => {
    return(
       <div className="leftFooter">
          <div className="footerContentDiv">
-            <img src={Rectangle} className="img"/>
+            <img src={Rectangle} className="img" alt=""/>
             <div className="footerTextsDiv">
                <div className="footerTextTop">
                   <div className="likeDiv">
